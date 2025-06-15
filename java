@@ -1,3 +1,48 @@
+public abstract class livro {
+    private String titulo;
+    private String autor;
+    private int anopublicacao;
+    private boolean disponivel;
+
+    livro (String titulo, String autor, int anopublicacao) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anopublocacao = anopublicacao;
+        this.disponivel = disponivel;
+    }
+      public String gettitulo() {
+          return this.titulo
+              }
+    public String getautor(){
+        return this.autor;
+    }
+    public int getAnoPublicacao(){
+        public void setTitulo (String titulo) {
+            this.titulo = titulo;
+    }
+      public void emprestar() {
+          if (this.disponivel) {
+              this.disponivel = false;
+       System.out.printhn ("emprestado");
+          }else{
+              System.out.println("livro indisponivel!");
+    }
+      }
+      public void devolver () {
+          if (!this.disponivel) {
+              this.disponivel = true;
+              System out.println ("devolvido com sucesso");
+    }else{
+              System.out.println ("erro ao desenvolver");
+    }
+      }
+    public abstract void exibirdetalhes();
+
+    private ArrayList <livro> livrosEmprestados;
+    [= new ArrayList <> ();]
+      this.livrosEmprestados = new ArrayList <> ();
+   public interface ItemBiblioteca {
+       boolean disponivel ();
 package br.com.minhaclasse.contrato;
 public interface ItemBiblioteca {
     boolean isDisponivel();
